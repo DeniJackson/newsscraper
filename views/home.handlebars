@@ -1,9 +1,10 @@
   <h1>Connected</h1>
-  <ul>
-  {{#each results}}
-    <li>
-      <p>Title: {{title}}</p>
-      <p>Link: <a href="{{link}}">Link</a></p>
-    </li>
-  {{/each}}
-</ul>
+{{# each articles }}
+        <div class="art">
+            <div class="titlke">
+                <a href={{this.link}}><h3>{{this.title }}</h3></a>
+                <input type="text">
+                <button id="postComment">Post comment</button>
+            </div>
+        </div>
+{{/each}}
